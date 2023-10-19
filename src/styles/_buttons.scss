@@ -1,0 +1,26 @@
+@use 'variaveis';
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary{
+        color: variaveis.$textColor;
+        background-color: variaveis.$corBotao;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}

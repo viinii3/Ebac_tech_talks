@@ -2,8 +2,8 @@
   "name": "evento",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.0",
-    "parcel": "^2.10.0"
+    "parcel": "^2.10.0",
+    "sharp": "^0.31.3"
   }
 }
